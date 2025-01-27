@@ -44,5 +44,5 @@ jobs:
             pip install django==2.2.28
             pip install pillow
 
-        - name: Run test(chapter 3)
-          run: python manage.py test rango.tests_chapter3
+        - name: Run test(chapter 4)
+          run: python manage.py test rango.tests_chapter4
