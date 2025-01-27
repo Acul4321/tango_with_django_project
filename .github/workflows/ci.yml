@@ -25,7 +25,7 @@ jobs:
 
         - name: Set up Enviroment
           run: |
-            conda init --all
+            conda init tango_with_django
             conda activate tango_with_django
             
         - name: Install Python 3.11.11
