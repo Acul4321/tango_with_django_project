@@ -23,10 +23,13 @@ jobs:
             bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
             rm ~/miniconda3/miniconda.sh
 
-        - name: Set up Enviroment
+        - name: Initialize Conda
           run: |
-            conda init --all
-            conda activate tango_with_django
+            ~/miniconda3/bin/conda init --all
+            source ~/.bashrc
+
+        - name: Set up Environment
+          run: conda activate tango_with_django
             
         - name: Install Python 3.11.11
           uses: actions/setup-python@v3
