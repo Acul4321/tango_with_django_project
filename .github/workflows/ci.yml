@@ -27,6 +27,11 @@ jobs:
           run: |
             ~/miniconda3/bin/conda init --all
             source ~/.bashrc
+          
+        - name: Install Python 3.11.11
+          uses: actions/setup-python@v3
+          with:
+            python-version: '3.11.11'
 
         - name: Set up Environment
           run: |
@@ -34,10 +39,6 @@ jobs:
             source ~/miniconda3/bin/activate
             conda activate tango_with_django
             
-        - name: Install Python 3.11.11
-          uses: actions/setup-python@v3
-          with:
-            python-version: '3.11.11'
 
         - name: Install Dependancies
           run: |
