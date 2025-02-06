@@ -80,6 +80,12 @@ TEMPLATES = [
 WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 
 
+# Session
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+SESSION_COOKIE_AGE = 1209600
+
+
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
